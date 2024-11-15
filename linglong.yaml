@@ -3,7 +3,7 @@ version: "1"
 package:
   id: com.alipay.devtools.deepin
   name: com.alipay.devtools.deepin
-  version: 1.0.0.0
+  version: 1.0.0.1
   kind: app
   description: |
       signed_com.alipay.devtools.deepin_3.8.3deepin7_amd64.deb
