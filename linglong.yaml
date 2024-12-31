@@ -3,10 +3,10 @@ version: "1"
 package:
   id: com.alipay.devtools.deepin
   name: com.alipay.devtools.deepin
-  version: 1.0.0.1
+  version: 1.0.0.2
   kind: app
   description: |
-      signed_com.alipay.devtools.deepin_3.8.3deepin7_amd64.deb
+      signed_com.alipay.devtools.deepin_3.8.3deepin9_amd64.deb
       
 base: org.deepin.base.wine/23.2.0
 runtime: org.deepin.runtime.wine/23.2.1
@@ -16,13 +16,13 @@ command:
 
 sources:
   - kind: file
-    url: https://winedata-dev.deepin.com/apps/com.alipay.devtools.deepin/b6329ae/signed_com.alipay.devtools.deepin_3.8.3deepin7_amd64.deb
-    digest: 61d1d386a65b0d31a730ff7789feebfa8c5e50b7863db7659a1c5cfab5e056ef
+    url: https://winedata-dev.deepin.com/apps/com.alipay.devtools.deepin/93032f8/signed_com.alipay.devtools.deepin_3.8.3deepin9_amd64.deb
+    digest: b893ad5e6939b8deb4421c4b0e55abe3229c64130cec0ebe50d2d16efd7ea2dc
 
 build: |
   set -x
   SOURCES="linglong/sources"
-  dpkg-deb -x $SOURCES/signed_com.alipay.devtools.deepin_3.8.3deepin7_amd64.deb $SOURCES/com.alipay.devtools.deepin
+  dpkg-deb -x $SOURCES/signed_com.alipay.devtools.deepin_3.8.3deepin9_amd64.deb $SOURCES/com.alipay.devtools.deepin
   # run.sh替换
   FILE_PATH="$SOURCES/com.alipay.devtools.deepin/opt/apps/com.alipay.devtools.deepin/files/run.sh" 
   sed -i -e 's|/opt/deepin-wine8-stable|/runtime/deepin-wine8-stable|g' \
